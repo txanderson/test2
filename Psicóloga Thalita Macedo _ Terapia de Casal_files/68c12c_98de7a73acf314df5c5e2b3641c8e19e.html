@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://www-thalitamacedo-com-br.filesusr.com/html/68c12c_98de7a73acf314df5c5e2b3641c8e19e.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>FAQ Recolhível</title>
+
+  <!-- Fonte Montserrat -->
+  <link href="./css2" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff00;
+    }
+
+    details {
+      margin-bottom: 1.5rem;
+    }
+
+    summary {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 16px;
+      padding: 1.2rem 2rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      color: #000000;
+    }
+
+    summary:hover {
+      background-color: #bb7852;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(187, 120, 82, 0.5);
+    }
+
+    details[open] summary {
+      background-color: #bb7852;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(187, 120, 82, 0.5);
+    }
+
+    summary::-webkit-details-marker,
+    summary::marker {
+      display: none;
+    }
+
+    .icon {
+      transition: transform 0.3s ease;
+      fill: currentColor;
+      margin-left: 1rem;
+    }
+
+    details[open] .icon {
+      transform: rotateX(180deg);
+    }
+
+    details p {
+      margin: 0.75rem 0 0 1.5rem;
+      color: #333;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <details open="">
+    <summary>
+       Como funciona o atendimento com terapia cognitivo comportamental?
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+        <path d="M444-768v438L243-531l-51 51 288 288 288-288-51-51-201 201v-438h-72Z"></path>
+      </svg>
+    </summary>
+    <p>O atendimento com Terapia Cognitivo-Comportamental (TCC) funciona de forma estruturada e focada em objetivos específicos. Ela é uma abordagem baseada em evidências, muito utilizada para tratar questões como ansiedade, depressão, fobias, transtornos alimentares, entre outros.</p>
+  </details>
+
+  <details>
+    <summary>
+       Atende através de plano de saúde? 
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+        <path d="M444-768v438L243-531l-51 51 288 288 288-288-51-51-201 201v-438h-72Z"></path>
+      </svg>
+    </summary>
+    <p>O atendimento psicológico é particular e não trabalhamos com planos de saúde. Para mais informações sobre valores e agendamentos, entre em contato.</p>
+  </details>
+
+  <details>
+    <summary>
+       A sessão ocorre apenas de forma semanal?
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+        <path d="M444-768v438L243-531l-51 51 288 288 288-288-51-51-201 201v-438h-72Z"></path>
+      </svg>
+    </summary>
+    <p>A sessão ocorre semanalmente ou a cada dez dias. Quando o paciente estiver em processo de alta terapêutica, poderá ser avaliada a possibilidade de espaçar os atendimentos para o formato quinzenal.</p>
+  </details>
+
+  <script>
+    const detailsElements = document.querySelectorAll('details');
+
+    detailsElements.forEach((detail) => {
+      detail.addEventListener('toggle', (e) => {
+        if (detail.open) {
+          detailsElements.forEach((otherDetail) => {
+            if (otherDetail !== detail && otherDetail.open) {
+              otherDetail.open = false;
+            }
+          });
+        }
+      });
+    });
+  </script>
+
+</body></html>
